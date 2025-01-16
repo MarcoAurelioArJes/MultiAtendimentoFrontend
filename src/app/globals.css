@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.tituloChats {
+  display: flex;
+  min-height: 2.5rem;
+  margin: 0 !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #acacac #f0f0f0;
+}

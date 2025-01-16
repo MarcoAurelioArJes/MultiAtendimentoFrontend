@@ -1,0 +1,7 @@
+export const CADASTRO_ROTA = '/cadastro'
+export const ENTRAR_ROTA = '/entrar'
+export const CHAT_ROTA = '/chat'
+export const CHATCLIENTE_ROTA = '/chatcliente'
+export const CONTROLE_ROTA = '/controle'
+export const ATUALIZAR_SENHA_ROTA = '/atualizarSenha'
+export const RECUPERAR_SENHA_ROTA = '/recuperarSenha'

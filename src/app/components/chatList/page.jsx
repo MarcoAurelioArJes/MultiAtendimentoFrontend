@@ -10,7 +10,7 @@ const ChatList = ({ chats, onChatClick }) => {
             <h2 className="bg-gray-800 tituloChats">Chats</h2>
                 <div className="chat-list-children">
                     <ul className="divide-y divide-gray-100">
-                    {chats.map((chat) => (
+                    {chats && chats.map((chat) => (
                         <ChatCard key={chat.id} chat={chat} onClick={onChatClick} />
                     ))}
                     </ul>

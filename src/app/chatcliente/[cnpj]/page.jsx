@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import Formulario from '../../components/cliente/formulario'
 import Chat from '../../components/cliente/chat'
 import { useParams } from 'next/navigation'

@@ -1,13 +1,15 @@
+'use client'
+
 import React from 'react';
 import { generateColorFromInitial, getInicial } from '@/utils/fotoPerfilUtils'
 
 const ChatCard = ({ chat, onClick }) => {
-    const inicialNome = getInicial(chat.cliente.nome);
+    const inicialNome = getInicial(chat?.cliente?.nome);
     const corIcon = generateColorFromInitial(inicialNome);
 
     return (
         <li
-            key={chat.id}
+            key={chat?.id}
             className="flex justify-between gap-x-6 py-3 px-1 cursor-pointer"
             onClick={() => onClick(chat)}
         >
@@ -19,7 +21,7 @@ const ChatCard = ({ chat, onClick }) => {
                     {inicialNome}
                 </div>
                 <div className="min-w-0 flex-auto">
-                    <p className="text-sm font-semibold leading-6 text-gray-900">{chat.cliente.nome}</p>
+                    <p className="text-sm font-semibold leading-6 text-gray-900">{chat?.cliente?.nome}</p>
                 </div>
             </div>
         </li>

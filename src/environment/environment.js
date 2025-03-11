@@ -1,5 +1,5 @@
 export const environment = {
     api: {
-        url: 'http://localhost:9000'
+        url: 'https://multiatendimento.runasp.net'
     }
 };
